@@ -1,0 +1,103 @@
+// 设计尺寸
+$design:750px;
+// 分割分数
+$split:10;
+// 单位尺寸
+$unit:$design/$split;
+
+@function pxToRem($px) {
+    @return $px/$unit*1rem;
+}
+
+html,
+body,
+ul,
+li,
+img,
+a,
+p,
+div,
+form,
+input,
+button {
+    font-size: 32px;
+    padding: 0;
+    margin: 0;
+    /*设置盒模型*/
+    /*box-sizing: border-box;*/
+    /*去除移动端特有的点击高亮效果*/
+    -webkit-tap-highlight-color: transparent;
+}
+
+.strategy {
+    background: #ef4a2e;
+    padding: pxToRem(30px);
+    height: 100vh;
+    overflow: auto;
+}
+
+.bothImg {
+    width: pxToRem(33px);
+    height: pxToRem(40px);
+    display: block;
+}
+
+.buZhou {
+    border-bottom-left-radius: pxToRem(15px);
+    border-bottom-right-radius: pxToRem(15px);
+}
+
+.tuYang {
+    height: pxToRem(540px);
+    width: pxToRem(287px);
+    display: block;
+}
+
+.tanChu_ls {
+    height: pxToRem(257px);
+    width: pxToRem(287px);
+    display: block;
+}
+
+.zuiHou_ls {
+    height: pxToRem(280px);
+    width: pxToRem(575px);
+    display: block;
+}
+
+.timeZhou {
+    height: 100%;
+    width: pxToRem(3px);
+    background: #ef4a2e;
+    left: pxToRem(80px);
+}
+.timeZhouEnd{
+    height: 88%;
+    width: pxToRem(3px);
+    background: #ef4a2e;
+    left: pxToRem(80px);
+}
+.circle_ls{
+    width: pxToRem(25px);
+    height: pxToRem(25px);
+    border-radius: 50%;
+    border:  pxToRem(3px) solid #ef4a2e;
+    left: pxToRem(65px);
+    background: #fff;
+    z-index: 500;
+}
+.touLian_ls{
+    width: 102%;
+    height: pxToRem(30px);
+    display: block;
+    top: pxToRem(-10px);
+    left: -1%;
+}
+.white-mode{
+    height: pxToRem(20px);
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(top,#ef4a2e,#fff);
+    background: -webkit-linear-gradient(top,#ef4a2e,#fff);
+}

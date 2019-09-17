@@ -1,0 +1,176 @@
+// 设计尺寸
+$design:750px;
+// 分割分数
+$split:10;
+// 单位尺寸
+$unit:$design/$split;
+
+@function pxToRem($px) {
+    @return $px/$unit*1rem;
+}
+
+html,
+body,
+ul,
+li,
+img,
+a,
+p,
+div,
+form,
+input,
+button {
+    // font-size: 32px;
+    padding: 0;
+    margin: 0;
+    /*设置盒模型*/
+    /*box-sizing: border-box;*/
+    /*去除移动端特有的点击高亮效果*/
+    -webkit-tap-highlight-color: transparent;
+}
+
+.bg_img{
+    width: 100%;
+    height: pxToRem(534px);
+    display: block;
+    background: #ef4a2e;
+}
+.biaoTi{
+    top: pxToRem(435px);
+    left: 0;
+    height: pxToRem(60px);
+}
+.w-686{
+    width: pxToRem(686px);
+}
+.chooseItem{
+    height: pxToRem(90px);
+    width: pxToRem(340px);
+    border-top-left-radius: pxToRem(15px);
+    border-top-right-radius: pxToRem(15px);
+}
+.chooseItem2{
+    height: pxToRem(80px);
+    width: pxToRem(340px);
+    border-top-left-radius: pxToRem(15px);
+    border-top-right-radius: pxToRem(15px);
+    margin-top: pxToRem(10px);
+}
+.btm-mode-qin{
+    padding: pxToRem(42px)  pxToRem(32px);
+    background: #ef4a2e;
+}
+
+.btn_img{
+    margin-top: pxToRem(20px);
+    width: pxToRem(280px);
+    height: pxToRem(70px);
+    display: block;
+}
+.tel{
+    width: pxToRem(61px);
+    height: pxToRem(68px);
+    display: block;
+    margin-left: pxToRem(20px);
+}
+.inputB{
+    border: pxToRem(2px) solid #ffbe4c;
+    border-radius: pxToRem(6px);
+    width: pxToRem(430px);
+    height: pxToRem(80px);
+    margin-left: pxToRem(50px);
+    text-align: center;
+}
+.quAn{
+    width: pxToRem(40px);
+    height: pxToRem(40px);
+    border-radius: 50%;
+    margin-right: pxToRem(12px);
+    border: pxToRem(2px) solid #333;
+}
+.xuAn{
+    width: pxToRem(42px);
+    height: pxToRem(42px);
+    margin-right: pxToRem(12px);
+    display: block;
+}
+.itemGua{
+    width: 40%;
+    padding-bottom: pxToRem(28px);
+}
+.hongAnNiu{
+    width: pxToRem(430px);
+    height: pxToRem(88px);
+    display: block;
+    margin-top: pxToRem(30px);
+}
+.xiAnHin{
+    height: pxToRem(88px);
+    bottom: 0;
+    left: pxToRem(30px);
+}
+.xiAnHin2{
+    height: pxToRem(88px);
+    bottom: 0;
+    left: 0;
+}
+.radius-bot-15{
+    border-bottom-right-radius: pxToRem(15px);
+    border-bottom-left-radius: pxToRem(15px);
+}
+.bothImg{
+    width: pxToRem(33px);
+    height: pxToRem(40px);
+    display: block;
+}
+.textCenter{
+    text-align: center;
+}
+.yaoQinAnNiu{
+    border: pxToRem(2px) solid #fda201;
+    border-radius: pxToRem(22px);
+    height: pxToRem(40px);
+}
+.autoY{
+    overflow-y: scroll;
+}
+.autoY::-webkit-scrollbar {
+    display: none;
+}
+.buZhou{
+    top: pxToRem(42px);
+    left:pxToRem(-20px);
+    width: pxToRem(116px);
+    height: pxToRem(62px);
+}
+.buZhou2{
+    top: 0;
+    left:pxToRem(-20px);
+    width: pxToRem(116px);
+    height: pxToRem(62px);
+}
+.guiZe{
+    width: pxToRem(50px);
+    height: pxToRem(138px);
+    top: pxToRem(55px);
+    right: 0;
+}
+.guangMode{
+    top: pxToRem(10px);
+    left: 0;
+    width: 100%;
+   
+}
+.guaG{
+    height: pxToRem(25px);
+    line-height: pxToRem(25px); 
+    overflow: hidden;
+}
+.for_model{
+    list-style: none;
+
+}
+.lingDang{
+    width: pxToRem(23px);
+    height: pxToRem(28px);
+}

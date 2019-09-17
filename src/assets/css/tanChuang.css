@@ -1,0 +1,263 @@
+@charset "UTF-8";
+
+html,
+body,
+ul,
+li,
+img,
+a,
+p,
+div,
+form,
+input,
+button {
+  font-size: 32px;
+  padding: 0;
+  margin: 0;
+  /*设置盒模型*/
+  /*box-sizing: border-box;*/
+  /*去除移动端特有的点击高亮效果*/
+  -webkit-tap-highlight-color: transparent;
+}
+i {
+  font-style: normal;
+}
+
+/* 公共遮罩层 */
+.share {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 12, 12, 0.5);
+  z-index: 500;
+}
+.share>div>i {
+  position: absolute;
+  display: block;
+  width: .7rem;
+  height: .7rem;
+  border-radius: 50%;
+  border: .05rem solid #fff;
+  text-align: center;
+  line-height:.7rem;
+  font-size: .9rem;
+  color: #fff;
+  bottom: -1.5rem;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+/* 活动规程弹窗模块 */
+.rule-y {
+  width: 8.09rem;
+  height: 7.9rem;
+  /* background: url(../img/activity_rule.png) no-repeat; */
+  background-size: contain;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 .85rem .8rem;
+  box-sizing: border-box;
+}
+.rule-y>img {
+  width: 8.09rem;
+  height: 7.9rem;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.rule-y>p {
+  text-align: center;
+  font-size: .41rem;
+  color: #fff;
+  padding: 0 0 .8rem;
+  position: relative;
+  z-index: 500;
+}
+.rule-y>div p{
+  font-size: .36rem;
+  text-indent: .5rem;
+  padding-bottom: .25rem;
+  line-height: .559rem;
+  position: relative;
+}
+.rule-y>div p i {
+  color: #f03f24;
+}
+.rule-y>div p::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: .1rem;
+  width: .4rem;
+  height: .4rem;
+  background: url(../img/square_one.png) no-repeat;
+  background-size: contain;
+
+}
+.rule-y>div p:nth-child(2)::before {
+  background-image: url(../img/square_two.png);
+}
+.rule-y>div p:nth-child(3)::before {
+  background-image: url(../img/square_three.png);
+}
+
+/* 亲友扫码的二维码弹窗 */
+.er-code-y {
+  width: 8.08rem;
+  height: 8.65rem;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background: url(../img/er_wei_code.png) no-repeat; */
+  background-size: contain;
+  padding: .8rem .85rem 0;
+  box-sizing: border-box;
+}
+.er-code-y>img {
+  width: 8.08rem;
+  height: 8.65rem;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.er-code-y p {
+  font-size: .38rem;
+  color: #fff;
+  padding-bottom: .7rem;
+  position: relative;
+}
+.er-code-y>div {
+  display: block;
+  margin: 0 auto;
+  width: 3.95rem;
+  height: 4rem;
+  border-radius: .2rem;
+  position: relative;
+}
+.er-code-y>div div{
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: .2rem;
+  background-color: #fff;
+  border-radius: .2rem;
+}
+
+/* 邀请成功弹窗 */
+.invite-success-y {
+  width: 8.65rem;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background: url(../img/invite_success.png) no-repeat; */
+  background-size: contain;
+  padding: 1.6rem .5rem .8rem;
+  box-sizing: border-box;
+}
+.invite-success-y>img {
+  width: 8.65rem;
+  height: 10rem;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.invite-success-y div {
+  position: relative;
+}
+.invite-success-y p:nth-child(1){
+  font-size: .42rem;
+  padding: .55rem .6rem;
+  line-height: .625rem;
+  background-color: #feeaec;
+  border-radius: .15rem;
+}
+.invite-success-y p:nth-child(1) i{
+  color: #f03f24;
+}
+.invite-success-y p:nth-child(2){
+  font-size: .44rem;
+  text-align: center;
+  padding-top: .6rem;
+}
+.invite-success-y div img {
+  display: block;
+  margin: 0 auto;
+  width: 1.31rem;
+  height: 1.31rem;
+  padding-top: .6rem;
+  padding-bottom: .26rem;
+}
+.invite-success-y span {
+  display: block;
+  text-align: center;
+  font-size: .34rem;
+  color: #585858;
+}
+
+
+/* 返回，放弃弹窗 */
+.quit-y {
+  width: 9rem;
+  background-color: #fff;
+  padding: .91rem .81rem .8rem;
+  border-radius: .2rem;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+}
+.quit-y p {
+  font-size: .5rem;
+  color: #5b5b5b;
+  padding-bottom: .8rem;
+}
+.quit-y p i {
+  color: #f14228;
+}
+.quit-y>div {
+  display: flex;
+  justify-content: space-between;
+}
+.quit-y>div a {
+  width: 3.45rem;
+  height: 1.15rem;
+  border-radius: .15rem;
+  font-size: .44rem;
+  text-align: center;
+  line-height: 1.15rem;
+  text-decoration: none;
+}
+.quit-y>div a:nth-child(1){
+  color: #fff;
+  background-color: #c3c5c4;
+}
+.quit-y>div a:nth-child(2){
+  color: #000;
+  background-color: #ffca06;
+}
+
+
+
+/* 测试的按钮 */
+.div-cs {
+  background-color: skyblue;
+  height: 1rem;
+  line-height: 1rem;
+  margin-bottom: .5rem;
+  font-size: 20px;
+  text-align: center;
+}

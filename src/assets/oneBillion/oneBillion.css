@@ -1,0 +1,496 @@
+@charset "UTF-8";
+html,
+body,
+ul,
+li,
+img,
+a,
+p,
+div,
+form,
+input,
+button {
+  font-size: 32px;
+  padding: 0;
+  margin: 0;
+  /*设置盒模型*/
+  /*box-sizing: border-box;*/
+  /*去除移动端特有的点击高亮效果*/
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background: #fd5533;
+  height: 100vh;
+}
+
+.relative {
+  position: relative;
+}
+
+.ls_billion {
+  width: 100%;
+  height: 19.33333rem;
+  display: block;
+}
+
+.jiangChi {
+  position: absolute;
+  left: 0;
+  top: 3.6rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.jiangchi_ls {
+  height: 4.18667rem;
+  width: 8.94667rem;
+}
+
+.img_item {
+  width: 2rem;
+  height: 2.06667rem;
+  display: flex;
+  flex-shrink: 0;
+}
+
+.daKa {
+  width: 2.13333rem;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.z-1000 {
+  z-index: 1000;
+}
+
+.z-500 {
+  z-index: 500;
+}
+
+.w-all {
+  width: 100%;
+}
+
+.t-279 {
+  top: 3.72rem;
+}
+
+.t-365 {
+  top: 4.86667rem;
+}
+
+.t-530 {
+  top: 7.06667rem;
+}
+
+.t-630 {
+  top: 8.4rem;
+}
+
+.t-760 {
+  top: 10.13333rem;
+}
+
+.t-870 {
+  top: 11.6rem;
+}
+
+.t-1010 {
+  top: 13.46667rem;
+}
+
+.t-1030 {
+  top: 13.73333rem;
+}
+
+.t-1055 {
+  top: 14.06667rem;
+}
+
+.t-1070 {
+  top: 14.33333rem;
+}
+
+.middle {
+  display: flex;
+  justify-content: center;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+}
+
+.baseline {
+  display: flex;
+  align-items: baseline;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.h-172 {
+  height: 2.29333rem;
+}
+
+.h-202 {
+  height: 2.69333rem;
+}
+
+.t-110 {
+  top: -1.46667rem;
+}
+
+.t-145 {
+  top: -1.93333rem;
+}
+
+.taiFen {
+  width: 2.77333rem;
+  height: 2.29333rem;
+  display: block;
+  position: relative;
+}
+
+.taiHuang {
+  width: 2.93333rem;
+  height: 2.69333rem;
+  display: block;
+  position: relative;
+}
+
+.row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.column {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.guItem {
+  width: 0.8rem;
+  height: 0.66667rem;
+}
+
+.around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.oneHund {
+  width: 6.26667rem;
+  height: 1.17333rem;
+}
+
+.oneHu_mode {
+  width: 6.26667rem;
+  height: 1.17333rem;
+  border-radius: 0.16rem;
+  background: #babab8;
+}
+
+.center-mode {
+  width: 4rem;
+  height: 2.13333rem;
+  background: #fff;
+  padding: 0.4rem;
+  border-radius: 0.16rem;
+}
+
+.mt-10 {
+  margin-top: 0.13333rem;
+}
+
+.mt-15 {
+  margin-top: 0.2rem;
+}
+
+.mt-21 {
+  margin-top: 0.28rem;
+}
+
+.mt-50 {
+  margin-top: 0.66667rem;
+}
+
+.mr-30 {
+  margin-right: 0.4rem;
+}
+
+.mr-84 {
+  margin-right: 1.12rem;
+}
+
+.benZhouCaiFu {
+  width: 8.49333rem;
+  height: 0.53333rem;
+}
+
+.zhAnKua {
+  width: 7.96rem;
+  height: 0.52rem;
+}
+
+.border-lan {
+  border: 0.05333rem solid #b2f7fe;
+}
+
+.border-ye {
+  border: 0.05333rem solid #fff4a0;
+}
+
+.border-fen {
+  border: 0.05333rem solid #fdb4d2;
+}
+
+.border-fe {
+  border: 0.05333rem solid #fe6aa4;
+}
+
+.wh-110 {
+  width: 1.46667rem;
+  height: 1.46667rem;
+  border-radius: 50%;
+}
+
+.fs-30 {
+  font-size: 0.4rem;
+}
+
+.fs-28 {
+  font-size: 0.37333rem;
+}
+
+.fs-40 {
+  font-size: 0.53333rem;
+}
+
+.fs-80 {
+  font-size: 1.06667rem;
+}
+
+.fs-22 {
+  font-size: 0.29333rem;
+}
+
+.fs-20 {
+  font-size: 0.26667rem;
+}
+
+.fs-34 {
+  font-size: 0.45333rem;
+}
+
+.fs-24 {
+  font-size: 0.32rem;
+}
+
+.fs-26 {
+  font-size: 0.34667rem;
+}
+
+.fs-50 {
+  font-size: 0.66667rem;
+}
+
+.fs-60 {
+  font-size: 0.8rem;
+}
+
+.fs-36 {
+  font-size: 0.48rem;
+}
+
+.fc-ff {
+  color: #ffdf28;
+}
+
+.fc-white {
+  color: #fff;
+}
+
+.fc-33 {
+  color: #333;
+}
+
+.fc-66 {
+  color: #666;
+}
+
+.fc-e8 {
+  color: #e8120e;
+}
+
+.fc-ed {
+  color: #ed002b;
+}
+
+.fc-fc {
+  color: #fc3629;
+}
+
+.fc-fe {
+  color: #fe6aa4;
+}
+
+.fc-fb {
+  color: #fb5932;
+}
+
+.fc-59 {
+  color: #59ef80;
+}
+
+.fc-f9 {
+  color: #f9c536;
+}
+
+.fc-fd {
+  color: #fd5533;
+}
+
+.fc-1a {
+  color: #1aa10f;
+}
+
+.fc-d5 {
+  color: #d50008;
+}
+
+.fw-bolder {
+  font-weight: bolder;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.bc-white {
+  background: #fff;
+}
+
+.bc-fe {
+  background: #fe6aa4;
+}
+
+.bc-f9 {
+  background: #f9c536;
+}
+
+.btm-mode {
+  height: 3.73333rem;
+  width: 3.28rem;
+  margin-bottom: 0.42667rem;
+  border-radius: 0.16rem;
+}
+
+.topImg {
+  width: 0.8rem;
+  height: 0.8rem;
+  position: absolute;
+  right: 0.68rem;
+  top: 0;
+}
+
+.wind_bao_ls {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.42667rem;
+}
+
+.bao_model {
+  width: 80%;
+  height: 4.66667rem;
+  border-radius: 0.16rem;
+  background: #fff;
+  position: relative;
+}
+
+.bao_modelImg {
+  width: 7.61333rem;
+  height: 8.18667rem;
+}
+
+.duiHao {
+  width: 1.06667rem;
+  height: 1.06667rem;
+  margin-top: 1.06667rem;
+  margin-bottom: 0.4rem;
+}
+
+.bc_chaMode {
+  right: 0;
+  top: 0;
+  width: 1.06667rem;
+  height: 1.06667rem;
+}
+
+.bc_cha {
+  width: 0.4rem;
+  height: 0.4rem;
+}
+
+.daKaWind {
+  margin-top: 0.8rem;
+  margin-bottom: 0.4rem;
+}
+
+.mx-20 {
+  margin: 0 0.26667rem;
+}
+
+.guaFen_mode {
+  top: 0.85333rem;
+  left: 0;
+}
+
+.btn_gua_mode {
+  width: 5.25333rem;
+  height: 1.2rem;
+  border-radius: 0.13333rem;
+  background: #ffe018;
+  color: #610012;
+}
+
+.btn_guaFen {
+  position: absolute;
+  bottom: 0.8rem;
+  left: 0;
+  width: 100%;
+}
+
+.cancel_ls {
+  width: 1.06667rem;
+  height: 1.06667rem;
+}
+
+.cancle_mode {
+  position: absolute;
+  bottom: -1.6rem;
+  left: 0;
+  width: 100%;
+}

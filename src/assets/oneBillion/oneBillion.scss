@@ -1,0 +1,411 @@
+// 设计尺寸
+$design:750px;
+// 分割分数
+$split:10;
+// 单位尺寸
+$unit:$design/$split;
+
+@function pxToRem($px) {
+    @return $px/$unit*1rem;
+}
+
+html,
+body,
+ul,
+li,
+img,
+a,
+p,
+div,
+form,
+input,
+button {
+    font-size: 32px;
+    padding: 0;
+    margin: 0;
+    /*设置盒模型*/
+    /*box-sizing: border-box;*/
+    /*去除移动端特有的点击高亮效果*/
+    -webkit-tap-highlight-color: transparent;
+}
+body{
+    background: #fd5533;
+    height: 100vh;
+}
+.relative{
+    position: relative;
+}
+
+.ls_billion{
+    width: 100%;
+    height:pxToRem(1450px);
+    display: block;
+}
+.jiangChi{
+    position: absolute;
+    left: 0;
+    top: pxToRem(270px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.jiangchi_ls{
+    height: pxToRem(314px);
+    width: pxToRem(671px);
+}
+.img_item{
+    width: pxToRem(150px);
+    height: pxToRem(155px);
+    display: flex;
+    flex-shrink: 0;
+}
+.daKa{
+    width: pxToRem(160px);
+}
+.absolute{
+    position: absolute;
+}
+.z-1000{
+    z-index: 1000;
+}
+.z-500{
+    z-index: 500;
+}
+.w-all{
+    width: 100%;
+}
+.t-279{
+    top: pxToRem(279px);
+}
+.t-365{
+    top: pxToRem(365px);
+}
+.t-530{
+    top: pxToRem(530px);
+}
+.t-630{
+    top: pxToRem(630px);
+}
+.t-760{
+    top: pxToRem(760px);
+}
+.t-870{
+    top: pxToRem(870px);
+}
+.t-1010{
+    top: pxToRem(1010px);
+}
+.t-1030{
+    top: pxToRem(1030px);
+}
+.t-1055{
+    top: pxToRem(1055px);
+}
+.t-1070{
+    top: pxToRem(1075px);
+}
+.middle{
+    display: flex;
+    justify-content: center;
+}
+.center{
+    display: flex;
+    align-items: center;
+}
+.baseline{
+    display: flex;
+    align-items: baseline;
+}
+.bottom{
+    bottom: 0;
+}
+.h-172{
+    height: pxToRem(172px);
+}
+.h-202{
+    height: pxToRem(202px);
+}
+.t-110{
+    top:pxToRem(-110px);
+}
+.t-145{
+    top: pxToRem(-145px);
+}
+.taiFen{
+    width: pxToRem(208px);
+    height: pxToRem(172px);
+    display: block;
+    position: relative;
+}
+.taiHuang{
+    width: pxToRem(220px);
+    height: pxToRem(202px);
+    display: block;
+    position: relative;
+}
+.row{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.column{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.guItem{
+    width: pxToRem(60px);
+    height: pxToRem(50px);
+}
+.around{
+    display: flex;
+    justify-content: space-around;
+}
+.between{
+    display: flex;
+    justify-content: space-between;
+}
+.oneHund{
+    width:pxToRem(470px);
+    height: pxToRem(88px); 
+}
+.oneHu_mode{
+    width:pxToRem(470px);
+    height: pxToRem(88px); 
+    border-radius: pxToRem(12px);
+    background: #babab8;
+}
+.center-mode{
+    width: pxToRem(300px);
+    height: pxToRem(160px);
+    background: #fff;
+    padding: pxToRem(30px);
+    border-radius: pxToRem(12px);
+}
+.mt-10{
+    margin-top: pxToRem(10px);
+}
+.mt-15{
+    margin-top: pxToRem(15px);
+}
+.mt-21{
+    margin-top: pxToRem(21px);
+}
+.mt-50{
+    margin-top: pxToRem(50px);
+}
+
+.mr-30{
+    margin-right: pxToRem(30px);
+}
+.mr-84{
+    margin-right: pxToRem(84px);
+}
+.benZhouCaiFu{
+    width: pxToRem(637px);
+    height: pxToRem(40px);
+}
+.zhAnKua{
+    width: pxToRem(597px);
+    height: pxToRem(39px);
+}
+.border-lan{
+    border: pxToRem(4px) solid  #b2f7fe;
+}
+.border-ye{
+    border: pxToRem(4px) solid  #fff4a0;
+}
+.border-fen{
+    border: pxToRem(4px) solid  #fdb4d2;
+}
+.border-fe{
+    border: pxToRem(4px) solid #fe6aa4;
+}
+.wh-110{
+    width: pxToRem(110px);
+    height: pxToRem(110px);
+    border-radius: 50%;
+}
+
+.fs-30{
+    font-size: pxToRem(30px);
+}
+.fs-28{
+    font-size: pxToRem(28px);
+}
+.fs-40{
+    font-size: pxToRem(40px);
+}
+.fs-80{
+    font-size: pxToRem(80px);
+}
+.fs-22{
+    font-size: pxToRem(22px);
+}
+.fs-20{
+    font-size: pxToRem(20px);
+}
+.fs-34{
+    font-size: pxToRem(34px);
+}
+.fs-24{
+    font-size: pxToRem(24px);
+}
+.fs-26{
+    font-size: pxToRem(26px);
+}
+.fs-50{
+    font-size: pxToRem(50px);
+}
+.fs-60{
+    font-size: pxToRem(60px);
+}
+.fs-36{
+    font-size: pxToRem(36px);
+}
+.fc-ff{
+    color: #ffdf28;
+}
+.fc-white{
+    color: #fff;
+}
+.fc-33{
+    color: #333;
+}
+.fc-66{
+    color: #666;
+}
+.fc-e8{
+    color: #e8120e;
+}
+.fc-ed{
+    color: #ed002b;
+}
+.fc-fc{
+    color: #fc3629;
+}
+.fc-fe{
+    color: #fe6aa4;
+}
+.fc-fb{
+    color: #fb5932;
+}
+.fc-59{
+    color: #59ef80;
+}
+.fc-f9{
+    color: #f9c536;
+}
+.fc-fd{
+    color: #fd5533;
+}
+.fc-1a{
+    color: #1aa10f;
+}
+.fc-d5{
+    color: #d50008;
+}
+.fw-bolder{
+    font-weight: bolder;
+}
+.fw-bold{
+    font-weight: bold;
+}
+.fw-500{
+    font-weight: 500;
+}
+.bc-white{
+    background: #fff;
+}
+.bc-fe{
+    background: #fe6aa4;
+}
+.bc-f9{
+    background: #f9c536;
+}
+.btm-mode{
+    height: pxToRem(280px);
+    width: pxToRem(246px);
+    margin-bottom: pxToRem(32px);
+    border-radius: pxToRem(12px);
+}
+.topImg{
+    width: pxToRem(60px);
+    height: pxToRem(60px);
+    position: absolute;
+    right: pxToRem(51px);
+    top: 0;
+}
+// 报名成功弹窗样式
+.wind_bao_ls{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index:2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: pxToRem(32px);
+}
+.bao_model{
+    width: 80%;
+    height: pxToRem(350px);
+    border-radius: pxToRem(12px);
+    background: #fff;
+    position: relative;
+}
+.bao_modelImg{
+    width: pxToRem(571px);
+    height: pxToRem(614px);
+}
+.duiHao{
+    width: pxToRem(80px);
+    height: pxToRem(80px);
+    margin-top: pxToRem(80px);
+    margin-bottom: pxToRem(30px);
+}
+.bc_chaMode{
+    right: 0;
+    top: 0;
+    width: pxToRem(80px);
+    height: pxToRem(80px);
+}
+.bc_cha{
+    width: pxToRem(30px);
+    height: pxToRem(30px);
+}
+.daKaWind{
+    margin-top: pxToRem(60px);
+    margin-bottom: pxToRem(30px);
+}
+.mx-20{
+    margin: 0  pxToRem(20px);
+}
+.guaFen_mode{
+    top: pxToRem(64px);
+    left: 0;
+}
+.btn_gua_mode{
+    width: pxToRem(394px);
+    height: pxToRem(90px);
+    border-radius: pxToRem(10px);
+    background: #ffe018;
+    color: #610012;
+}
+.btn_guaFen{
+    position: absolute;
+    bottom: pxToRem(60px);
+    left: 0;
+    width: 100%;
+}
+.cancel_ls{
+    width: pxToRem(80px);
+    height: pxToRem(80px);
+}
+.cancle_mode{
+    position: absolute;
+    bottom: pxToRem(-120px);
+    left: 0;
+    width: 100%;
+}

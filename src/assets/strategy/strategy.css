@@ -1,0 +1,97 @@
+@charset "UTF-8";
+html,
+body,
+ul,
+li,
+img,
+a,
+p,
+div,
+form,
+input,
+button {
+  font-size: 32px;
+  padding: 0;
+  margin: 0;
+  /*设置盒模型*/
+  /*box-sizing: border-box;*/
+  /*去除移动端特有的点击高亮效果*/
+  -webkit-tap-highlight-color: transparent;
+}
+
+.strategy {
+  background: #ef4a2e;
+  padding: 0.4rem;
+  height: 100vh;
+  overflow: auto;
+}
+
+.bothImg {
+  width: 0.44rem;
+  height: 0.53333rem;
+  display: block;
+}
+
+.buZhou {
+  border-bottom-left-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
+}
+
+.tuYang {
+  height: 7.2rem;
+  width: 3.82667rem;
+  display: block;
+}
+
+.tanChu_ls {
+  height: 3.42667rem;
+  width: 3.82667rem;
+  display: block;
+}
+
+.zuiHou_ls {
+  height: 3.73333rem;
+  width: 7.66667rem;
+  display: block;
+}
+
+.timeZhou {
+  height: 100%;
+  width: 0.04rem;
+  background: #ef4a2e;
+  left: 1.06667rem;
+}
+
+.timeZhouEnd {
+  height: 88%;
+  width: 0.04rem;
+  background: #ef4a2e;
+  left: 1.06667rem;
+}
+
+.circle_ls {
+  width: 0.33333rem;
+  height: 0.33333rem;
+  border-radius: 50%;
+  border: 0.04rem solid #ef4a2e;
+  left: 0.86667rem;
+  background: #fff;
+  z-index: 500;
+}
+
+.touLian_ls {
+  width: 102%;
+  height: 0.4rem;
+  display: block;
+  top: -0.13333rem;
+  left: -1%;
+}
+
+.white-mode {
+  height: 0.26667rem;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(top, #ef4a2e, #fff);
+  background: -webkit-linear-gradient(top, #ef4a2e, #fff);
+}

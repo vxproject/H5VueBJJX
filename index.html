@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <title>多狐斗地主</title>
+  <script>
+    (function () {
+      var b = document.documentElement,
+        a = function () {
+          var a = b.getBoundingClientRect().width;
+          b.style.fontSize = (100 / 1080) * (a >= 1080 ? 1080 : a) + "px"
+        },
+        c = null;
+      window.addEventListener("resize", function () {
+        clearTimeout(c);
+        c = setTimeout(a, 300)
+      });
+      a()
+    })();
+
+    var jsonData = {
+      token: 'e4d9d4052a7005dc4d596e69d92c2f77e57206eebf68cd1bc433e978ea7d66b2'
+    };
+    // var ua = window.navigator.userAgent;
+    // if (!!ua.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)) {
+    //   let obj = {
+    //     type: 1,
+    //   }
+    //   let newData = JSON.stringify(obj)
+    //   window.webkit.messageHandlers.shareLink4WeChat.postMessage(newData);
+    // }
+
+    // function callbackUserInfo(usrInfo) {
+    //   jsonData = JSON.parse(usrInfo);
+    // }
+
+  </script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="app"></div>
+</body>
+
+</html>
